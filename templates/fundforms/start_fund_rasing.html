@@ -1,0 +1,174 @@
+<section id="">
+    <div class="container">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 no-padding">
+            <div class="panel panel-default">
+                <div class="panel-heading ">
+                    <div class="panel-title">
+                        <h2 class="text-primary"><small>Hello, </small>John Smith</h2>
+                    </div>
+                </div>
+                <div class="panel-body no-padding campaign_tabs hidden-xs">
+                    <ul ng-init="tab = 1" class="list-inline ">
+                        <li ng-class="{active:tab===1}">
+                            <span href="" ng-click="tab = 1" class="page_selected">Raise Fund</span>
+                        </li>
+                        <li ng-class="{active:tab===2}">
+                            <span href="" ng-click="tab = 2" class="page_selected">Campaign</span>
+                        </li>
+                        <li ng-class="{active:tab===3}">
+                            <span href="" ng-click="tab = 3" class="page_selected">Library</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <form action="" method="POST" role="form">
+                        <div ng-show="tab === 1">
+                            <div class="raise_fund">
+                                <legend class="visible-xs">Raise Fund</legend>
+                                <div class="form-group">
+                                    <label for="campaign_title">Campaign For</label>
+                                    <br>
+                                    <div class="btn-group btn-group-radio no-radius">
+                                        <input type="radio" name="myself" id="myself" value="my self">
+                                        <label class="btn no-radius" for="myself">
+                                            My Self
+                                        </label>
+                                        <input type="radio" name="myself" id="other" value="others" checked>
+                                        <label class="btn no-radius" for="other">
+                                            Others
+                                        </label>
+                                        <input type="radio" name="myself" id="charity" value="charity">
+                                        <label class="btn no-radius" for="charity">
+                                            Charity
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="campaign_title">Select Currency</label>
+                                    <br>
+                                    <div class="btn-group btn-group-radio no-radius">
+                                        <input type="radio" name="usd" id="usd" value="USD" checked>
+                                        <label class="btn no-radius" for="usd">
+                                            USD
+                                        </label>
+                                        <input type="radio" name="usd" id="aud" value="AMD">
+                                        <label class="btn no-radius" for="aud">
+                                            AUD
+                                        </label>
+                                        <input type="radio" name="usd" id="inr" value="INR">
+                                        <label class="btn no-radius" for="inr">
+                                            INR
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="campaign_title">Fund Amount</label>
+                                    <input type="number" class="form-control input-xlg" id="campaign_title" placeholder="$0">
+                                </div>
+                                <a href='' class="btn btn-primary pull-right" ng-click="tab = 2">Next</a>
+                            </div>
+                        </div>
+                        <div ng-show="tab === 2" ng-hide="true">
+                            <div class="raise_campaign">
+                                <legend class="visible-xs">Campaign</legend>
+                                <div class="form-group">
+                                    <label for="campaign_title">Campaign Title</label>
+                                    <input type="text" class="form-control" id="campaign_title" placeholder="Name of the campaign" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="campaign_title">Select Theme</label>
+                                    <br>
+                                    <div class="btn-group btn-group-radio no-radius btn-theme">
+                                        <input type="radio" name="color" id="Red" value="AMD">
+                                        <label class="btn no-radius btn-red" for="Red">
+                                        </label>
+                                        <input type="radio" name="color" id="orange" value="INR">
+                                        <label class="btn no-radius btn-orange" for="orange">
+                                        </label>
+                                        <input type="radio" name="color" id="light-green" value="USD">
+                                        <label class="btn no-radius btn-green" for="light-green">
+                                        </label>
+                                        <input type="radio" name="color" id="green" value="INR">
+                                        <label class="btn no-radius btn-blue" for="green">
+                                        </label>
+                                        <input type="radio" name="color" id="sky-blue" value="INR">
+                                        <label class="btn no-radius btn-pink" for="sky-blue">
+                                        </label>
+                                        <input type="radio" name="color" id="blue" value="INR">
+                                        <label class="btn no-radius btn-yellow" for="blue">
+                                        </label>
+                                        <input type="radio" name="color" id="light-purple" value="INR">
+                                        <label class="btn no-radius btn-theme btn-yellow" for="light-purple">
+                                        </label>
+                                        <input type="radio" name="color" id="purple" value="INR">
+                                        <label class="btn no-radius btn-yellow" for="purple">
+                                        </label>
+                                        <input type="radio" name="color" id="pink" value="INR">
+                                        <label class="btn no-radius btn-yellow" for="pink">
+                                        </label>
+                                        <input type="radio" name="color" id="brown" value="INR">
+                                        <label class="btn no-radius btn-yellow" for="brown">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="campaign_title">Campaign Category</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Select-one</option>
+                                        <option value="">Earth Quake</option>
+                                        <option value="">Floods</option>
+                                        <option value="">Education</option>
+                                        <option value="">Charity</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="campaign_title">Campaign Location</label>
+                                    <input type="text" class="form-control" id="campaign_title" placeholder="Location of the campaign" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="campaign_title">Campaign Description</label>
+                                    <textarea name="" id="" cols="60" rows="15" class="form-control" placeholder="Type description here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <span ng-click="tab = 1" class="pointer">Go Back</span>
+                                <a href='' class="btn btn-primary pull-right" ng-click="tab = 3">Next</a>
+                            </div>
+                        </div>
+                    </form>
+                    <div ng-show="tab === 3" ng-hide="true">
+                        <form action="" method="POST" role="form">
+                            <legend class="visible-xs">Library</legend>
+                            <div class="form-group">
+                                <label for="">Upload Photos <small>(max 5 only)</small></label>
+                               <input type="file" accept="image/*" multiple image="images" />
+                                <img ng-repeat="img in images" width="50px" height="50px" style="margin:5px;float:left;" ng-src="{{img.url}}" type="{{img.file.type}}"/> 
+                            </div><br><br><br>
+                            <div class="form-group">
+                                <label for="">Video url <small>( paste url below )</small></label>
+                                <input type="text" class="form-control" id="" placeholder="paste video url here">
+                            </div>
+                            <div class="form-group">
+                                <label for="">facebook url <small>( paste url below )</small></label>
+                                <input type="text" class="form-control" id="" placeholder="paste fb url here">
+                            </div>
+                            <div class="form-group">
+                                <label for="">google+ url <small>( paste url below )</small></label>
+                                <input type="text" class="form-control" id="" placeholder="paste google+ url here">
+                            </div>
+                            <div class="form-group">
+                                <label for="">twitter url <small>( paste url below )</small></label>
+                                <input type="text" class="form-control" id="" placeholder="paste twitter url here">
+                            </div>
+                            <div class="clearfix">
+                                <span class="pointer">Go Back</span>
+                                <a href="#/dashboard" class="btn btn-primary pull-right">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

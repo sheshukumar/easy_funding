@@ -1,0 +1,42 @@
+<section>
+    <div class="container no-padding">
+        <div class="col-md-12 no-padding margin-top">
+            <div class="col-xs-12 col-sm-3 no-padding">
+                <div ng-include="'templates/dashboard/dashboard_panel.html'"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>Account Status - <small>Manage your easy funding account status below</small></h3>
+                <p>Are you sure want to <span class="text-danger">Delete Account?</span></p>
+                <p>Want to turn off new donations from coming into a campaign?</p>
+                <p><a href="" ng-click="turnon=!turnon">Click here to turn off donations.</a></p>
+                <p class="text-danger" ng-show="turnon" data-slide-toggle-duration="1000">Are you sure you want to turn off donations? <a href="">Yes </a>| <a href="" ng-click="turnon=!turnon">Cancel</a></p>
+                <p>Want to hide ALL your campaigns from the Public Search Directory?</p>
+                <p><a href="" ng-click="hiding=!hiding">Click here to hide all of your campaigns.</a></p>
+                <p class="text-danger" ng-show="hiding" data-slide-toggle-duration="1000">Are you sure you want to hide your campaign? <a href="">Yes </a> | <a href="" ng-click="hiding=!hiding">Cancel</a></p>
+                <p>Don’t want to get easyfunding emails anymore?</p>
+                <p><a href="" ng-click="emails=!emails">Click here to manage your email preferences.</a></p>
+                <div class="col-xs-12 col-sm-12 no-padding" ng-show="emails" data-slide-toggle-duration="1000">
+                    <h3>Email Preferences</h3>
+                    <p>Your email: me@example.com</p>
+                    <p>EasyFunding Newsletters</p>
+                    <p>
+                        <form action="" method="POST" role="form">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="off" id="inputOff" value=""> Off
+                                </label>
+                                <label>
+                                    <input type="radio" name="off" id="inputOn" value="" checked="checked"> On
+                                </label>
+                            </div>
+                        </form>
+                    </p>
+                    <a href="" ng-click="emails=!emails">Cancel</a>
+                </div>
+                <p><a href="" ng-click="delete_account=!delete_account">Click here to permanently delete your account.</a></p>
+                <p class="text-info" ng-show="delete_account" data-slide-toggle-duration="1000">IMPORTANT: Deleting your account is permanent and cannot be undone. You will not be able to log in to your account or view any of your past campaign information. This will remove any saved payment information. </p>
+                <p class="text-danger" ng-show="delete_account" data-slide-toggle-duration="1000">Are you sure you want to delete your entire Easy Funding account? <a href="">Yes </a> | <a href="" ng-click="delete_account=!delete_account">Cancel</a></p>
+            </div>
+        </div>
+    </div>
+</section>
