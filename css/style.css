@@ -25,11 +25,19 @@ header {
 
 .site-footer,
 .page-wrap:after {
-    height: 142px;
+    height: auto;
+    min-height: 142px;
+}
+
+.btn-facebook {
+    background-color: #3A5795;
+    color: #fff;
 }
 
 .site-footer {
     background: #282828;
+    padding: 30px 0;
+    color: #c7c7c7;
 }
 
 .pointer {
@@ -43,8 +51,13 @@ header {
 }
 
 section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -904,4 +917,40 @@ a.get_cause:hover .flexslider {
     top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+
+/* Example stylistic flourishes */
+
+.fileContainer {
+    background: #0A6C58;
+    padding: .5em;
+    color: #fff;
+    float: left;
+}
+
+.fileContainer [type=file] {
+    cursor: pointer;
+}
+
+
 }

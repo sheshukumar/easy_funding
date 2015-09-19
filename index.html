@@ -27,7 +27,7 @@
 
 <body class="loading">
     <div class="page-wrap">
-        <nav class="navbar navbar-default no-margin" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top no-margin" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="container">
                 <div class="navbar-header">
@@ -49,7 +49,7 @@
                 <span></span>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#/" ng-click="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">HOME</a></li>
+                        <li><a href="#/" ng-mouseover="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">HOME</a></li>
                         <li><a href="" class="get_cause hidden-xs" ng-mouseover="cause_list = !cause_list">CAUSES</a></li>
                         <li class="dropdown visible-xs mobile_cause_list">
                             <a href="" class="dropdown-toggle " data-toggle="dropdown">CAUSES <b class="caret"></b></a>
@@ -66,9 +66,9 @@
                                 <li><a href="#/cause_type"><i class="fa fa-globe " data-toggle="collapse" data-target=".navbar-collapse.in"> </i> <span>Travel</span></a></li>
                             </ul>
                         </li>
-                        <li><a href="#/news" ng-click="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">NEWS</a></li>
-                        <li><a href="#/signup" ng-click="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">SIGN UP</a></li>
-                        <li><a href="#/signin" ng-click="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">SIGN IN</a></li>
+                        <li><a href="#/news" ng-mouseover="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">NEWS</a></li>
+                        <li><a href="#/signup" ng-mouseover="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">SIGN UP</a></li>
+                        <li><a href="#/signin" ng-mouseover="cause_list_close()" data-toggle="collapse" data-target=".navbar-collapse.in">SIGN IN</a></li>
                         <li class="visible-xs"><a href="#/dashboard" data-toggle="collapse" data-target=".navbar-collapse.in">My Campaigns</a></li>
                         <li class="visible-xs"><a href="#/settings" data-toggle="collapse" data-target=".navbar-collapse.in">Settings</a></li>
                         <li class="hidden-xs">
@@ -90,23 +90,23 @@
                     </form>
                 </div>
             </div>
+            <div id="cc" class="flexslider carousel hidden-xs" ng-mouseleave="cause_list = !cause_list">
+                <ul class="list-inline slides cause_list" ng-show="cause_list">
+                    <li><a href="#/cause_type"><i class="fa fa-user "> </i> <span>Adoption</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-briefcase "> </i> <span>Business</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-child "> </i> <span>Charity</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Earth Quake</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-book "> </i> <span>Education</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-users "> </i> <span>Family</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Floods</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Memorial</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Pets</span></a></li>
+                    <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Travel</span></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
             <!-- /.navbar-collapse -->
         </nav>
-        <div id="cc" class="flexslider carousel" ng-mouseleave="cause_list = !cause_list">
-            <ul class="list-inline slides cause_list" ng-show="cause_list">
-                <li><a href="#/cause_type"><i class="fa fa-user "> </i> <span>Adoption</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-briefcase "> </i> <span>Business</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-child "> </i> <span>Charity</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Earth Quake</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-book "> </i> <span>Education</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-users "> </i> <span>Family</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Floods</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Memorial</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Pets</span></a></li>
-                <li><a href="#/cause_type"><i class="fa fa-globe "> </i> <span>Travel</span></a></li>
-            </ul>
-            <div class="clearfix"></div>
-        </div>
         <div class="container-fluid" id="">
             <div class="row">
                 <ng-view></ng-view>
@@ -115,12 +115,79 @@
     </div>
     <footer class="site-footer">
         <div class="container">
-            <p class="text-muted">Place footer content here...</p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <Ul class="list-unstyled">
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                    </Ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <Ul class="list-unstyled">
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                    </Ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <Ul class="list-unstyled">
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                    </Ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 ">
+                    <Ul class="list-unstyled">
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                        <li>some text</li>
+                    </Ul>
+                </div>
+                <div class="clearfix"></div>
+                <hr>
+                <div class="col-xs-12 no-padding">
+                    <div class="col-xs-12 col-sm-6">
+                        <ul class="list-inline">
+                            <li>Supported Countries :</li>
+                            <li>USA</li>
+                            <li>CANADA</li>
+                            <li>INDIA</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-right">
+                        <ul class="list-inline social-list">
+                            <li>Follow Us : </li>
+                            <li>
+                                <button type="submit" class="btn btn-facebook no-radius"><span class="fa fa-facebook fa-1x"></span></button>
+                            </li>
+                            <li>
+                                <button type="submit" class="btn btn-info no-radius"><span class="fa fa-twitter fa-1x"></span></button>
+                            </li>
+                            <li>
+                                <button type="submit" class="btn btn-danger no-radius"><span class="fa fa-google-plus fa-1x"></span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr>
+                <div class="col-xs-12">
+                    <p>Copy right reserved © 2015</p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
 <script src="js/app.js"></script>
-<!-- hireehubcontroller js -->
 <script src="js/controller.js"></script>
 <script>
 $(window).ready(function() {
