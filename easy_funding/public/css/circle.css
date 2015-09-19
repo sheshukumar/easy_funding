@@ -6,85 +6,96 @@
 *****************************************************************/
 
 .prog-circle .slice {
-  position : absolute;
-  width    : 1em;
-  height   : 1em;
-  clip     : rect(0em, 1em, 1em, 0.5em);
-}
-.prog-circle .slice.clipauto {
-  clip : rect(auto, auto, auto, auto);
-}
-.prog-circle .filll, .prog-circle .barr {
-  position              : absolute;
-  border                : 0.08em solid #0A6C58;
-  width                 : 1em;
-  height                : 1em;
-  clip                  : rect(0em, .5em, 1em, 0em);
-  -webkit-border-radius : 50%;
-  -moz-border-radius    : 50%;
-  -ms-border-radius     : 50%;
-  -o-border-radius      : 50%;
-  border-radius         : 50%;
-  -webkit-transform     : rotate(20deg);
-  -moz-transform        : rotate(20deg);
-  -ms-transform         : rotate(20deg);
-  -o-transform          : rotate(20deg);
-  transform             : rotate(20deg);
-}
-.prog-circle {
-  position              : relative;
-  font-size             : 147px;
-  width                 : 1em;
-  height                : 1em;
-  -webkit-border-radius : 50%;
-  -moz-border-radius    : 50%;
-  -ms-border-radius     : 50%;
-  -o-border-radius      : 50%;
-  border-radius         : 50%;
-  float                 : left;
-  margin                : 0 0.1em 0.1em 0;
-  background-color      : #CBCBD2;
-}
-.prog-circle .percenttext {
-  position                           : absolute;
-  width                              : 100%;
-  height                             : 1em;
-  z-index                            : 1;
-  margin                             : auto;
-  top                                : 0;
-  left                               : 0;
-  right                              : 0;
-  bottom                             : 0;
-  font-size                          : 0.25em;
-  color                              : #0A6C58;
-  display                            : block;
-  text-align                         : center;
-  white-space                        : nowrap;
-  line-height                        : 100%;
-  margin-left                        :10px;
-  -webkit-transition-duration        : 0.2s;
-  -moz-transition-duration           : 0.2s;
-  -o-transition-duration             : 0.2s;
-  transition-duration                : 0.2s;
-  -webkit-transition-timing-function : ease-out;
-  -moz-transition-timing-function    : ease-out;
-  -o-transition-timing-function      : ease-out;
-  transition-timing-function         : ease-out;
-}
-.prog-circle .after {
-  position              : absolute;
-  top                   : 0.08em;
-  left                  : 0.08em;
-  display               : block;
-  content               : " ";
-  -webkit-border-radius : 50%;
-  -moz-border-radius    : 50%;
-  -ms-border-radius     : 50%;
-  -o-border-radius      : 50%;
-  border-radius         : 50%;
-  background-color      : #FFFFFF;
-  width                 : 1em;
-  height                : 1em;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, 1em, 1em, 0.5em);
 }
 
-#circle{    margin-left: 14px}
+.prog-circle .slice.clipauto {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.prog-circle .filll,
+.prog-circle .barr {
+    position: absolute;
+    border: 0.08em solid #D9534F;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, .5em, 1em, 0em);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.prog-circle {
+    position: relative;
+    font-size: 147px;
+    width: 1em;
+    height: 1em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin: 0 0.1em 0.1em 0;
+    background-color: #CBCBD2;
+    font-size: 230px;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.prog-circle .percenttext {
+    position: absolute;
+    width: 100%;
+    height: 1em;
+    z-index: 1;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0.25em;
+    color: #D9534F;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 100%;
+    margin-left: 10px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.prog-circle .after {
+    position: absolute;
+    top: 0.08em;
+    left: 0.08em;
+    display: block;
+    content: " ";
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 1em;
+    height: 1em;
+}
+
+#circle {
+    margin-left: 14px
+}
