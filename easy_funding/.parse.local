@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "easy_funding"
+    },
+    "easy_funding": {
+      "applicationId": "EGjZjoreBKBedPkInItlZLIiWl59hAshKrFdNFI0"
+    }
+  }
+}
