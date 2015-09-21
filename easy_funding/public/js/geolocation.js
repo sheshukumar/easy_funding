@@ -39,7 +39,7 @@
                     //this is the object you are looking for
                     state= results[0].address_components[i];
                     
-                    document.getElementById("geo").innerHTML = state.long_name;
+                    document.getElementById("geo").innerHTML = ""+state.long_name;
                     break;
                 }
             }
@@ -48,30 +48,6 @@
         /* find city name here */
         
         // alert(state.long_name);
-
-             /*   switch(state.long_name)
-                {
-                  case "Telangana" : document.getElementById("geo").innerHTML = "Telangana";
-                                      break;
-
-                  case "Andhra Pradesh" : document.getElementById("geo").innerHTML = "Andhra Pradesh";
-                                      break;
-
-                  case "Maharashtra" : document.getElementById("geo").innerHTML = "Maharashtra";
-                                      break;
-
-                  case "Karnataka" : document.getElementById("geo").innerHTML = "Karnataka";
-                                      break;
-
-                  case "Kerala" : document.getElementById("geo").innerHTML = "Kerala";
-                                    break;
-
-                  case "Tamil Nadu" : document.getElementById("geo").innerHTML = "Tamil Nadu";
-                                    break;
-
-                  default : document.getElementById("geo").innerHTML = "USA";
-
-                }  */
 
         } else {
           alert("No results found");

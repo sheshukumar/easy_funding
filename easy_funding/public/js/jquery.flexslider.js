@@ -299,7 +299,7 @@
       },
       directionNav: {
         setup: function() {
-          var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li class="' + namespace + 'nav-prev"><a class="' + namespace + 'prev" href="#">' + slider.vars.prevText + '</a></li><li class="' + namespace + 'nav-next"><a class="' + namespace + 'next" href="#">' + slider.vars.nextText + '</a></li></ul>');
+          var directionNavScaffold = $('<div class = ""><ul class="' + namespace + 'direction-nav "><li class="' + namespace + 'nav-prev"><a class="' + namespace + 'prev" href="#">' +  '</a></li><li class="' + namespace + 'nav-next"><a class="' + namespace + 'next" href="#">' +  '</a></li></ul></div>');
 
           // CUSTOM DIRECTION NAV:
           if (slider.customDirectionNav) {
@@ -1181,9 +1181,9 @@
         case "play": $slider.play(); break;
         case "pause": $slider.pause(); break;
         case "stop": $slider.stop(); break;
-        case "next": $slider.flexAnimate($slider.getTarget("next"), true); break;
+        case "next": $slider.flexAnimate($slider.getTarget(""), true); break;
         case "prev":
-        case "previous": $slider.flexAnimate($slider.getTarget("prev"), true); break;
+        case "previous": $slider.flexAnimate($slider.getTarget(""), true); break;
         default: if (typeof options === "number") { $slider.flexAnimate(options, true); }
       }
     }

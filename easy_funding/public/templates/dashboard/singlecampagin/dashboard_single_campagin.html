@@ -1,5 +1,4 @@
 <section id="">
-    <br />
     <div class="container clearfix no-padding">
         <div class="col-xs-12 clearfix no-padding">
             <div class="col-xs-12 col-sm-3 no-padding">
@@ -14,22 +13,64 @@
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h2 class="no-margin">Campaign Title</h2></div>
+                                            <h2 class="no-margin">Campaign Title</h2>
+                                        </div>
                                     </div>
                                     <div class="panel-body">
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-12 col-sm-4 no-padding">
                                             <a href="" class="thumbnail">
                                                 <img src="http://placehold.it/800x500" alt="">
                                             </a>
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="col-xs-12 col-sm-8">
                                             <form action="" method="POST" role="form">
                                                 <div class="form-group">
                                                     <textarea class="form-control" name="Comments[text]" rows="6" title="Type your comment here..." id="commentTextBox" placeholder="Updates here...."></textarea>
                                                 </div>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <div class="form-group col-xs-12 col-sm-8 no-padding">
+                                                    <label class="fileContainer">
+                                                        Attach Files
+                                                        <input type="file" accept="image/*" multiple image="images" />
+                                                    </label>
+                                                    <div class="clearfix"></div>
+                                                    <img ng-repeat="img in images" width="50px" height="50px" style="margin:5px;float:left;" ng-src="{{img.url}}" type="{{img.file.type}}" />
+                                                </div>
+                                                <div class="col-xs-12 no-padding">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
                                             </form>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding">
+                                <legend>Updates - 3</legend>
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <ul class="commentList">
+                                            <li>
+                                                <div class="commentText">
+                                                    <p><span class="">on 5th Sept</span></p>
+                                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis magnam, ipsam quod sint quis recusandae maiores asperiores, molestiae fugit, quo dolores sequi natus enim, perferendis sapiente facere tenetur non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis magnam, ipsam quod sint quis recusandae maiores asperiores, molestiae fugit, quo dolores sequi natus enim, perferendis sapiente facere tenetur non.</p> <span class="date sub-text">on March 5th, 2014</span>
+                                                    <p><a href="" class="text-danger">Remove</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commentText">
+                                                    <p><span class="">on 15th Sept</span></p>
+                                                    <p class="">Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
+                                                    <p><a href="" class="text-danger">Remove</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commentText">
+                                                    <p><span class="">on 25th Sept</span></p>
+                                                    <p class="">Hello this is a test comment.</p>
+                                                    <span class="date sub-text">on March 5th, 2014</span>
+                                                    <p><a href="" class="text-danger">Remove</a></p>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

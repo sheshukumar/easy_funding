@@ -23,6 +23,14 @@ header {
     margin-bottom: 15px;
 }
 
+textarea {
+    resize: none;
+}
+
+.vresize {
+    resize: vertical;
+}
+
 .site-footer,
 .page-wrap:after {
     height: auto;
@@ -83,6 +91,27 @@ section {
 
 .no-padding {
     padding: 0!important;
+}
+
+.no-boxshadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.no-border {
+    border: 0;
+}
+
+@media (max-width: 320px) {
+    .responsive-padding-off {
+        padding: 0;
+    }
+    body {
+        background: #f7f7f7;
+    }
 }
 
 .no-radius {
@@ -378,6 +407,10 @@ section {
     background-image: url("../img/down_arrow.png");
 }
 
+.navbar-default {
+    line-height: 0;
+}
+
 .text-white,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #fff!important;
@@ -419,18 +452,6 @@ section {
     vertical-align: middle;
     line-height: 36px;
     background: #fff;
-}
-
-.flex-direction-nav .flex-prev {
-    left: 0;
-    text-align: left;
-    border: 0!important;
-}
-
-.flex-direction-nav .flex-next {
-    right: 0;
-    border: 0!important;
-    text-align: right;
 }
 
 
@@ -591,28 +612,57 @@ img {
     font-size: 14px;
 }
 
-.user-details {
+
+/* .user-details {
     position: relative;
     padding: 0;
-}
+} */
 
-.user-details .user-image {
+
+/* .user-details .user-image {
     position: relative;
     z-index: 1;
     width: 100%;
     text-align: center;
-}
+} */
 
-.user-image img {
-    clear: both;
-    margin: auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
+.user-title-text {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: .8;
+    padding: 5px;
+    background: #282828;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
+}
+.circle-title{
+    text-align: center;
+}
+.circle-title span {
+    position: absolute;
+    display: inline-block;
+    top: 25px;
+    text-align: center;
+    transform: translateX(-50%) translateY(-10%);
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    color: #fff;
+    background: #000;
+    opacity: .5;
     border-radius: 100%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+}
+.user-nav{
+    z-index: -1;
+}
+.navbar-nav.user-nav,
+.navbar-nav.user-nav > li
+{
+    float: none !important;
 }
 
 
@@ -951,6 +1001,7 @@ a.get_cause:hover .flexslider {
 .fileContainer [type=file] {
     cursor: pointer;
 }
-
-
+.status_list li{
+ border-bottom: 1px solid #c7c7c7;
+ padding-bottom: 5px;
 }

@@ -134,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="clearfix">
-                                    <span ng-click="tab = 1" class="pointer">Go Back</span>
+                                    <a ng-click="tab = 1" class="pointer">Go Back</a>
                                     <a href='' class="btn btn-primary pull-right" ng-click="tab = 3">Next</a>
                                 </div>
                             </div>
@@ -143,10 +143,16 @@
                             <form action="" method="POST" role="form">
                                 <legend class="visible-xs">Library</legend>
                                 <div class="form-group">
-                                    <label for="">Upload Photos <small>(max 5 only)</small></label>
-                                     <input type="file" accept="image/*" multiple image="images" />
-                                     <img ng-repeat="img in images" width="50px" height="50px" style="margin:5px;float:left;" ng-src="{{img.url}}" type="{{img.file.type}}"/> 
-                                </div><br><br><br> 
+                                    <label class="fileContainer">
+                                        Upload Photos Here<small>(max 5 only)</small>
+                                        <input type="file" accept="image/*" multiple image="images" />
+                                    </label>
+                                    <div class="clearfix"></div>
+                                    <img ng-repeat="img in images" width="50px" height="50px" style="margin:5px;float:left;" ng-src="{{img.url}}" type="{{img.file.type}}" />
+                                </div>
+                                <br>
+                                <br>
+                                <br>
                                 <div class="form-group">
                                     <label for="">Video url <small>( paste url below )</small></label>
                                     <input type="text" class="form-control" id="" placeholder="paste video url here">
@@ -164,7 +170,7 @@
                                     <input type="text" class="form-control" id="" placeholder="paste twitter url here">
                                 </div>
                                 <div class="clearfix">
-                                    <span class="pointer">Go Back</span>
+                                    <a ng-click="tab = 2" class="pointer">Go Back</a>
                                     <a href="#/dashboard" class="btn btn-primary pull-right">Submit</a>
                                 </div>
                             </form>

@@ -115,7 +115,8 @@ html[xmlns] .flexslider .slides {
   text-decoration: none;
   display: block;
   width: 40px;
-  height: 40px;
+  height: 54px;
+  line-height: 1;
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
@@ -265,12 +266,12 @@ html[xmlns] .flexslider .slides {
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 10px;
-    margin: -40px 0 0;
+    left: -50px;
+    margin: -20px 0 0;
   }
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 10px;
-    margin: -40px 0 0;
+    right: -50px;
+    margin: -20px 0 0;
   }
 }
