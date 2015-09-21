@@ -8,6 +8,23 @@ app.controller('MainController',function($scope) {
         $scope.comment_box = true;
     };
 
+    $scope.understand = function() {
+        $scope.withdraw = true;
+        $scope.sendform = true;
+        $scope.confirm = false;
+    };
+    $scope.sendConfirm = function() {
+       $scope.sendform = false;
+        $scope.confirm = true;
+    };
+    $scope.sure = function() {
+       $scope.done = true;
+        $scope.confirm = false;
+    };
+     $scope.thanks = function() {
+       alert("Amount withdraw transaction done successfully...");
+    };
+
 
       $scope.tabs = [{
           title: 'Home',
