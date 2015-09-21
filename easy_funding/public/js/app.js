@@ -106,5 +106,10 @@ app.config(function($routeProvider) {
             templateUrl: 'templates/donator.html'
         })
         /*.dashboard settings*/
+        /*tour*/
+        .when('/howitworks', {
+            controller: 'MainController',
+            templateUrl: 'templates/tour/howitworks.html'
+        })
 
 });

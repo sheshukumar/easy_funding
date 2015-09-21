@@ -47,7 +47,9 @@ textarea {
     padding: 30px 0;
     color: #c7c7c7;
 }
-
+.site-footer li a{
+    color: #c7c7c7
+}
 .pointer {
     cursor: pointer;
 }
@@ -481,6 +483,7 @@ section {
 }
 
 .search1:focus {
+    line-height: 1;
     width: 400px;
     z-index: 1;
     border-bottom: 1px solid #BBB;
@@ -656,8 +659,8 @@ img {
     opacity: .5;
     border-radius: 100%;
 }
-.user-nav{
-    z-index: -1;
+.dashboard_panel{
+    z-index: 999;
 }
 .navbar-nav.user-nav,
 .navbar-nav.user-nav > li
@@ -1004,4 +1007,16 @@ a.get_cause:hover .flexslider {
 .status_list li{
  border-bottom: 1px solid #c7c7c7;
  padding-bottom: 5px;
+}
+.footlist li{
+    padding: 0;
+}
+.footlist li a{
+    border-left: 1px solid #c7c7c7;
+    padding:0 10px;
+    display: block;
+    line-height: 1
+}
+.footlist li:first-child a{
+    border-left: 0;
 }
