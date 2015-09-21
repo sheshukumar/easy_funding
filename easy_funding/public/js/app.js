@@ -5,7 +5,7 @@ app.config(function($routeProvider) {
     /*basic templates*/
         .when('/', {
             controller: 'MainController',
-            templateUrl: 'templates/landing_page.html'
+            templateUrl: 'templates/home.html'
         })
         .when('/news', {
             controller: 'MainController',
